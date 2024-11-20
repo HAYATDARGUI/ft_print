@@ -1,4 +1,4 @@
-SRC = ft_putstr.c  ft_putchar.c  ft_printf.c ft_putnbr.c ft_puthexa.c ft_putunsigned.c\
+SRC = ft_putstr.c  ft_putchar.c  ft_printf.c ft_putnbr.c ft_puthexa.c ft_putunsigned.c ft_putp.c\
 
 OBJ = $(SRC:.c=.o)
 

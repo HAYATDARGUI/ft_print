@@ -6,7 +6,7 @@
 /*   By: hdargui <hdargui@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 10:27:31 by hdargui           #+#    #+#             */
-/*   Updated: 2024/11/20 11:56:59 by hdargui          ###   ########.fr       */
+/*   Updated: 2024/11/20 13:24:00 by hdargui          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int		ft_printf(const char *format, ...);
 void	ft_putchar(char c, int *len);
 void	ft_putstr(char *s, int *len);
 void	ft_putnbr(int n, int *len);
-int		ft_puthexa(unsigned long long num, char format);
+void		ft_puthexa(unsigned int  num, char format ,int *len);
 void	ft_putunsigned(unsigned int n, int *len);
-
+void	ft_putp(unsigned long  p, int *len);
 #endif
