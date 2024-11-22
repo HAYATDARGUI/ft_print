@@ -6,7 +6,7 @@
 /*   By: hdargui <hdargui@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 11:08:00 by hdargui           #+#    #+#             */
-/*   Updated: 2024/11/20 13:19:33 by hdargui          ###   ########.fr       */
+/*   Updated: 2024/11/20 15:08:02 by hdargui          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,10 @@ static void	ft_write(char c, va_list args, int *len)
 	else if (c == 'u')
 		ft_putunsigned(va_arg(args, unsigned int), len);
 	else if (c == 'X' || c == 'x')
-		ft_puthexa(va_arg(args, unsigned int), c ,len);
-	else if(c == 'p')
+		ft_puthexa(va_arg(args, unsigned int), c, len);
+	else if (c == 'p')
 	{
-		ft_putp(va_arg(args,unsigned long), len);
+		ft_putp(va_arg(args, unsigned long), len);
 	}
 	else if (c == '%')
 		ft_putchar('%', len);
@@ -59,6 +59,7 @@ int	ft_printf(const char *format, ...)
 	va_end(args);
 	return (len);
 }
+
 // int main()
 // {
 // 	int d = ft_printf("%x\n", 42);

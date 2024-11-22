@@ -6,13 +6,13 @@
 /*   By: hdargui <hdargui@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 11:52:55 by hdargui           #+#    #+#             */
-/*   Updated: 2024/11/20 13:30:01 by hdargui          ###   ########.fr       */
+/*   Updated: 2024/11/21 13:59:59 by hdargui          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-static void	converttohexa(unsigned int  num, int *len)
+static void	converttohexa(unsigned int num, int *len)
 {
 	char	hex[16];
 	int		i;
@@ -39,7 +39,7 @@ static void	converttohexa(unsigned int  num, int *len)
 	}
 }
 
-static void	converttoHEXA(unsigned int num, int *len)
+static void	converttohexaup(unsigned int num, int *len)
 {
 	char	hex[16];
 	int		i;
@@ -66,7 +66,7 @@ static void	converttoHEXA(unsigned int num, int *len)
 	}
 }
 
-void	ft_puthexa(unsigned int  num, char format, int *len)
+void	ft_puthexa(unsigned int num, char format, int *len)
 {
 	if (format == 'x')
 	{
@@ -74,6 +74,6 @@ void	ft_puthexa(unsigned int  num, char format, int *len)
 	}
 	else
 	{
-		converttoHEXA(num, len);
+		converttohexaup(num, len);
 	}
 }
